@@ -1,0 +1,284 @@
+html{
+  font: normal normal 20px Futura;
+}
+
+/*ここからheader*/
+
+
+header {
+  height: 102px;
+  width: 100%;
+  background-color:rgba(255, 255, 255,0.9);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header-left { 
+  color: #89C12B;
+  float: left;
+  padding-top:20px;
+  height: 44px;
+  font: normal normal bold 35px Futura;
+}
+
+.header-list{
+  font-size: 20px;
+  float: right;
+  padding:20px 0 0 0;
+  margin-right: 4px;
+}
+
+.header-list li {
+  decoration: none;
+  list-style: none;
+  float: left;
+  font-weight: bold;
+  padding: 0 41px 0 0;
+}
+
+/*ここからメイン*/
+
+.top-wrapper {
+  height: 657px;
+  width: 100%;
+  padding-left:6%;
+  padding-top:40px;
+  background-color: #F6F6F4;
+}
+
+.top-picture{
+  float: right;
+  width: 50%;
+
+}
+
+.top-picture img{
+  width: 100%;
+}
+
+.message-block{
+  width: 50%;
+}
+
+.main-message{
+padding-top: 20px;
+width: 100%;
+text-align: left;
+font: normal normal bold 60px Futura;
+letter-spacing: 0px;
+color: #89C12B;
+opacity: 1;
+}
+
+.sub-message1{
+padding-top: 5px;  
+text-align: left;
+font: normal normal bold 40px Futura;
+letter-spacing: 0px;
+color: #3E3E3E;
+opacity: 1;
+
+}
+
+.sub-message2{
+text-align: left;
+padding-top: 50px;
+font: normal normal medium 22px Futura;
+letter-spacing: 0px;
+color: #3E3E3E;
+opacity: 1;
+}
+
+.register-bnt{
+  padding-top:90px;
+}
+
+/**ここからボタン**/
+
+.form-text{
+  height: 39px;
+  width: 300px;
+  text-align: center;
+  z-index: 10;
+  outline: 0;
+  border: 1px solid #707070;
+  border-radius: 31px;  
+}
+
+.submit-btn {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 1em 2em 1em 1em;
+  width: 175px;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+  background: #5bbee5;
+  background: linear-gradient(to right, #5bbee5, #52ddae);
+  border-radius: 31px;
+
+}
+
+
+/*ここからNEWS*/
+.news-wrapper {
+  height: 1286px;
+  padding-top: 81px;
+
+}
+
+.news-title{
+text-align: center;
+font: normal normal bold 60px/80px Futura;
+letter-spacing: 0px;
+color: #3E3E3E;
+opacity: 1;
+}
+
+
+.first_content{
+  height: 295px;
+  width: 80%;
+  margin-top:5%;
+  margin-left: 10%;
+  background-color: #F9FBF6;
+  display: flex;
+  align-items: center;
+}
+
+.second_content{
+  height: 295px;
+  width: 80%;
+  margin-top:2%;
+  margin-left: 10%;
+  background-color: #F9FBF6;
+  display: flex;
+  align-items: center;
+}
+
+.third_content{
+  height: 295px;
+  width: 80%;
+  margin-top:2%;
+  margin-left: 10%;
+  background-color: #F9FBF6;
+  display: flex;
+  align-items: center;
+}
+
+.news-picture {
+  margin-left: auto;
+  width: 50%;
+ }
+
+.news-picture img{
+  width: 100%;
+}
+
+.news-details{
+  padding-left: 7%;
+  padding-right: 2%;
+  padding-top: 2%;
+}
+
+.newstitle{
+text-align: left;
+font: normal normal bold 40px Futura;
+letter-spacing: 0px;
+color: #3E3E3E;
+opacity: 1;
+}
+
+.newscontents{
+text-align: left;
+font: normal normal medium 16px Futura;
+letter-spacing: 0px;
+color: #3E3E3E;
+opacity: 1;
+
+}
+
+.newscontents newsdate{
+text-align: left;
+font: normal normal bold 30 Futura;
+letter-spacing: 0px;
+color: #3E3E3E;
+opacity: 1;
+
+}
+
+/*ここからAbout*/
+.about-wrapper {
+  height: 935px;
+  background-color: #F9FBF6;
+  padding-top: 81px;
+}
+
+.about-title{
+text-align: center;
+font: normal normal bold 60px/80px Futura;
+letter-spacing: 0px;
+color: #3E3E3E;
+opacity: 1;
+}
+
+.about-content{
+  width: 90%;
+  margin-top:5%;
+  background-color: #F9FBF6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-picture {
+  width: 40%;
+}
+
+.about-picture img{
+  width: 100%;
+}
+
+.about-textbox{
+  margin-top:2%;
+}
+
+
+
+/*ここからfooter*/
+footer {
+  height: 510px;
+  background-color: #282826;
+  width: 100%;
+}
+
+/*ここまで大きさ*/
+
+
+
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="container">
+        <div class="header-left">
+        <p>NEWS BUYCOOT</p>
+        </div>          
+        <div class="header-list">
+        <nav>
+        <ul>
+          <li>News</li>
+          <li>About</li>
+          <li>Register Now</li>
+        </ul>
+        </nav>
+        </div>
+      </div>
+    </header>
+    <div class="top-wrapper">
+      <div class="top-background"></div>
+      <div class="all-message">
+        <div class="top-picture"><img src="img/business20.png"></div>
+        <div class="message-block">
+        <div class="main-message">Know Good Company</div>
+        <div class="sub-message1">Only 5min You can read <br>"eco-news" "Sustainable-news" </div>
+        <div class="sub-message2">エコロジーな企業を応援したいあなたへ<br>企業の取り組みや方針などをニュースレターでお届け</div>
+        <div class="register-bnt">
+          <form>
+          <input class="form-text" type="email" id="email" placeholder="E-mail">
+          <input class="submit-btn" type="submit" value="Register Now">
+          </form>
+          
+          <%= form_with url: "/forms", local: true do |f| %>
+            <%= f.text_field :email %>
+            <%= f.submit "Register" %>
+          <% end %>
+          
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="news-wrapper">
+      <div class="news-title">The Lastest News</div>
+      <div class="news-content">
+        <div class="first_content">
+          <div class="news-details">
+          <div class="newstitle">面白法人カヤックがサーフィン事業へ</div>
+          <div class="newscontents">鎌倉はいつも天気がよいですが、<br>みなさんはどのようにお過ごし</div>
+          <div class="newsdate">2021/08/10</div>
+        </div>
+          <div class="news-picture"><img src="img/スクロールグループ 1.png"></div>
+        </div>
+
+        <div class="second_content">
+          <div class="news-details">
+          <div class="newstitle">面白法人カヤックがサーフィン事業へ</div>
+          <div class="newscontents">鎌倉はいつも天気がよいですが、みなさんはどのようにお過ごし</div>
+          <div class="newsdate">2021/08/09</div>
+          </div>
+          <div class="news-picture"><img src="img/pexels-hristo-fidanov-1252873.png"></div>
+        </div>
+
+        <div class="third_content">
+          <div class="news-details">
+          <div class="newstitle">面白法人カヤックがサーフィン事業へ</div>
+          <div class="newscontents">鎌倉はいつも天気がよいですが、みなさんはどのようにお過ごし</div>
+          <div class="newsdate">2021/08/09</div>
+          </div>
+          <div class="news-picture"><img src="img/pexels-pixabay-50577.png"></div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+    <div class="about-wrapper">
+      <div class="about-title">What is Buy coutt</div>
+      <div class="about-content">
+        <div class="about-picture"><img src="img/about.png"></div>
+        <div class="about-textbox">
+          <div class="about-textall">
+          <div class="about-title">ああああああああ</div>
+          <div class="about-text">あああああああ</div>
+          </div>
+          <div class="about-textall">
+          <div class="about-title">ああああああああ</div>
+          <div class="about-text">あああああああ</div>
+          </div>
+          <div class="about-textall">
+          <div class="about-title">ああああああああ</div>
+          <div class="about-text">あああああああ</div>
+          </div>
+
+          </div>
+      </div>
+    </div>
+    </div>
+    <footer>
+    </footer>  
+  </div>
+</body>
+</html>
+
+

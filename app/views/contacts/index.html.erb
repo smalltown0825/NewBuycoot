@@ -1,0 +1,22 @@
+<h1>管理者画面テスト</h1>
+  <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>id</th>
+        <th>登録日時</th>
+        <th>メールアドレス</th>
+      </tr>
+    </thead>
+  <tbody>
+  <% @contacts.each do |contact| %>
+      <tr>
+      <td><%= contact.id %></td>
+      <td><%= contact.created_at %></td>
+      <td><%= contact.email %></td>
+      </tr>
+    <% end %>
+  </tbody>
+ </table>
+ <div><%= paginate @contacts %></div>
+
+ <%= link_to '新規メッセージの投稿', new_contact_path, class: "btn btn-primary" %>
