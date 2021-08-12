@@ -13,14 +13,17 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-      
-    if @contact.save 
+    
+      if @contact.save 
+        
+        ContactMailer.with(contact: @contact).welcome_email.deliver_now
         flash[:success] = 'メールアドレスが登録されました！'
         redirect_to new_contact_path
-    else
+          
+      else
         flash.now[:danger] = 'メールアドレスが登録されませんでした'
         render new_contact_path
-    end
+      end
   end
 
   def edit
